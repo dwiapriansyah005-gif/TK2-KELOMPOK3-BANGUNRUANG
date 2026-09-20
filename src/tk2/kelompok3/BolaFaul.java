@@ -23,7 +23,7 @@ public class BolaFaul {
                          + ", phi = " + String.format("%.2f", Math.PI));
         System.out.println("Ditanya : V, L?");
         System.out.printf("V = %.2f%n", volume());
-        System.out.printf("L = %.2f%n" , LuasPermukaan());
+        System.out.printf("L = %.2f%n", LuasPermukaan());
         System.out.println();
     }
 }
