@@ -6,6 +6,12 @@ public class BalokBagas {
     private double lebar;
     private double tinggi;
 
+    public BalokBagas(double panjang, double lebar, double tinggi) {
+        this.panjang = panjang;
+        this.lebar = lebar;
+        this.tinggi = tinggi;
+    }
+
     public double getPanjang() {
         return panjang;
     }
@@ -43,6 +49,6 @@ public class BalokBagas {
         System.out.println("V = " + volume());
         System.out.println("L = " + LuasPermukaaan());
         System.out.println();
-       
+        
     }
 }
