@@ -8,7 +8,7 @@ package tk2.kelompok3;
  *
  * @author macbookairm12020
  */
-public class TK2KELOMPOK3 {
+public class MainBangunRuang {
 
     /**
      * @param args the command line arguments
