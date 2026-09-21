@@ -11,12 +11,15 @@ public class MainBangunRuang {
         //3.Balok
         BalokBagas balok = new BalokBagas(8,4,3);
         balok.tampil();
-        //Bola
+        //4.Bola
         BolaFaul bola = new BolaFaul(7);
         bola.tampil();
-        //Kerucut
+        //5.Kerucut
         KerucutFarid kerucut = new KerucutFarid(7,24,25);
         kerucut.tampil();
+        //6.Limas Segi Empat
+        DwiLimassegiempat limas = new DwiLimassegiempat (10, 5, 12);
+        limas.tampil();
     }
     
 }

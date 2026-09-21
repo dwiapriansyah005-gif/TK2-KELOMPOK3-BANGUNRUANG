@@ -1,16 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package tk2.kelompok3;
 
-/**
- *
- * @author macbookairm12020
- */
+package tk2.kelompok3;
 public class DwiLimassegiempat {
 
-    public class Limassegiempat {
 
         //Atributt
         private double alas;
@@ -19,7 +10,7 @@ public class DwiLimassegiempat {
 
         
         //Constructor
-        public Limassegiempat(double alas, double tinggi, double tinggiSisi) {
+        public DwiLimassegiempat(double alas, double tinggi, double tinggiSisi) {
             this.alas = alas;
             this.tinggi = tinggi;
             this.tinggiSisi = tinggiSisi;
@@ -111,5 +102,5 @@ public class DwiLimassegiempat {
             System.out.println();
         }
     }
-}
+
 
