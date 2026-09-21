@@ -14,6 +14,9 @@ public class MainBangunRuang {
         //Bola
         BolaFaul bola = new BolaFaul(7);
         bola.tampil();
+        //Kerucut
+        KerucutFarid kerucut = new KerucutFarid(7,24,25);
+        kerucut.tampil();
     }
     
 }

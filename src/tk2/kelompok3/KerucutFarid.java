@@ -1,14 +1,11 @@
 package tk2.kelompok3;
 public class KerucutFarid {
-    
-    // Class Kerucut
-public class Kerucut {
-    
+
     // Atribut
     private double jariJari, tinggi, garisPelukis;
 
     // Construcktor
-    public Kerucut(double jariJari, double tinggi, double garisPelukis) {
+    public KerucutFarid(double jariJari, double tinggi, double garisPelukis) {
         this.jariJari = jariJari;
         this.tinggi = tinggi;
         this.garisPelukis = garisPelukis;
@@ -43,4 +40,4 @@ public class Kerucut {
         System.out.println();
     }
 }
-}
+
