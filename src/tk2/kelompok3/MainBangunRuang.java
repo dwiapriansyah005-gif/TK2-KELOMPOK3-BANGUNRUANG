@@ -11,6 +11,9 @@ public class MainBangunRuang {
         //3.Balok
         BalokBagas balok = new BalokBagas(8,4,3);
         balok.tampil();
+        //Bola
+        BolaFaul bola = new BolaFaul(7);
+        bola.tampil();
     }
     
 }
