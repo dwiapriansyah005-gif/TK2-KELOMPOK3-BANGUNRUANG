@@ -74,23 +74,20 @@ public class DwiLimassegiempat {
 
         // 5. Menghitung luas selimut
         public double luasSelimut() {
-            double luasSisitegak = 0;
-            return 4 * luasSisitegak;
+            return 4 * luasSisitegak();
         }
 
         // 6. Menghitung luas permukaan
         public double luasPermukaan() {
-            double luasAlas = 0;
-            double luasSelimut = 0;
-            return luasAlas + luasSelimut;
+            return luasAlas() + luasSelimut();
         }
 
         // 7. Menghitung Volume
         public double volume() {
-            double luasAlas = 0;
-            return (1.0 / 3.0) * luasAlas * tinggi;
+            return (1.0 / 3.0) * luasAlas() * tinggi;
         }
 
+        //method
         public void tampil() {
             System.out.println("Rumus Diagonal Alas (d) = alas * Math.sqrt(2) ");
             System.out.println("Rumus Luas Alas (LA) = alas * alas ");
