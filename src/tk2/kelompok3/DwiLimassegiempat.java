@@ -12,11 +12,21 @@ public class DwiLimassegiempat {
 
     public class Limassegiempat {
 
-        //atributt
+        //Atributt
         private double alas;
         private double tinggi;
         private double tinggiSisi;
 
+        
+        //Constructor
+        public Limassegiempat(double alas, double tinggi, double tinggiSisi) {
+            this.alas = alas;
+            this.tinggi = tinggi;
+            this.tinggiSisi = tinggiSisi;
+        }
+
+        
+        //Getter dan Setter
         public double getAlas() {
             return alas;
         }
