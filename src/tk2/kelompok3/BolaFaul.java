@@ -3,6 +3,11 @@ package tk2.kelompok3;
 public class BolaFaul {
     private double jariJari;
 
+    public BolaFaul(double jariJari) {
+        this.jariJari = jariJari;
+    }
+
+    
     public double getJariJari() {
         return jariJari;
     }
