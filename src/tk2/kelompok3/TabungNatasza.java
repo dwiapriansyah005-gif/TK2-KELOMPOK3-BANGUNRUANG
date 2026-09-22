@@ -29,6 +29,7 @@ public class TabungNatasza {
         return 2 * Math.PI * jariJari * (jariJari + tinggi);
     }
      public void tampil() {
+         System.out.println("-------TABUNG-------");
         System.out.println("Rumus Volume (V) = phi * r * r * t");
         System.out.println("Rumus Luas Permukaan (L) = 2 * phi * r * (r + t)");
         System.out.println("Diketahui : r = " + (int) jariJari
