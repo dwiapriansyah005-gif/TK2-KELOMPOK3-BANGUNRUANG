@@ -1,106 +1,80 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package tk2.kelompok3;
+
+/**
+ *
+ * @author macbookairm12020
+ */
 public class DwiLimassegiempat {
+    
+    //Atribut
+    private double sisiAlas;
+    private double tinggiLimas;
+    private double tinggiSisi;
 
+    //Constructor
+    public DwiLimassegiempat(double sisiAlas, double tinggiLimas, double tinggiSisi) {
+        this.sisiAlas = sisiAlas;
+        this.tinggiLimas = tinggiLimas;
+        this.tinggiSisi = tinggiSisi;
+    }
+    
+    //Getter & Setter
 
-        //Atributt
-        private double alas;
-        private double tinggi;
-        private double tinggiSisi;
-
-        
-        //Constructor
-        public DwiLimassegiempat(double alas, double tinggi, double tinggiSisi) {
-            this.alas = alas;
-            this.tinggi = tinggi;
-            this.tinggiSisi = tinggiSisi;
-        }
-
-        
-        //Getter dan Setter
-        public double getAlas() {
-            return alas;
-        }
-
-        public void setAlas(double alas) {
-            this.alas = alas;
-        }
-
-        public double getTinggi() {
-            return tinggi;
-        }
-
-        public void setTinggi(double tinggi) {
-            this.tinggi = tinggi;
-        }
-
-        public double getTinggiSisi() {
-            return tinggiSisi;
-        }
-
-        public void setTinggiSisi(double tinggiSisi) {
-            this.tinggiSisi = tinggiSisi;
-        }
-
-        //rumus
-        // 1. Menghitung diagonal alas
-        public double diagonalAlas() {
-            return alas * Math.sqrt(2);
-        }
-
-        // 2. Menghitung luas alas
-        public double luasAlas() {
-            return alas * alas;
-        }
-
-        // 3. Menghitung keliling alas
-        public double kelilingAlas() {
-            return 4 * alas;
-        }
-
-        // 4. Menghitung luas satu sisi tegak
-        public double luasSisitegak() {
-            return 0.5 * alas * tinggiSisi;
-        }
-
-        // 5. Menghitung luas selimut
-        public double luasSelimut() {
-            return 4 * luasSisitegak();
-        }
-
-        // 6. Menghitung luas permukaan
-        public double luasPermukaan() {
-            return luasAlas() + luasSelimut();
-        }
-
-        // 7. Menghitung Volume
-        public double volume() {
-            return (1.0 / 3.0) * luasAlas() * tinggi;
-        }
-
-        //method
-        public void tampil() {
-            System.out.println("Rumus Diagonal Alas (d) = alas * Math.sqrt(2) ");
-            System.out.println("Rumus Luas Alas (LA) = alas * alas ");
-            System.out.println("Rumus Keliling Alas (K) = 4 * alas ");
-            System.out.println("Rumus Luas Sisi Tegak (Lst) = 1/2 * alas * tinggiSisi ");
-            System.out.println("Rumus Luas selimut (Ls) = 4 * luasSisitegak ");
-            System.out.println("Rumus Luas Permukaan (L) = luasAlas + luasSelimut ");
-            System.out.println("Rumus Volume (V) = 1/3 * luasAlas * tinggi ");
-
-            System.out.println("Diketahui : alas = " + (double) alas + "\ntinggi = " + (double) tinggi + "\ntinggiSisi = " + (double) tinggiSisi);
-            System.out.println("Ditanya : Diagonal Alas, Luas Alas, Keliling Alas, Luas Sisi Tegak, Luas Selimut, Luas Permukaan, Volume?");
-
-            System.out.println("Diagonal Alas = " + diagonalAlas());
-            System.out.println("Luas Alas = " + luasAlas());
-            System.out.println("Keliling Alas = " + kelilingAlas());
-            System.out.println("Luas Sisi Tegak = " + luasSisitegak());
-            System.out.println("Luas Selimut = " + luasSelimut());
-            System.out.println("Luas Permukaan = " + luasPermukaan());
-            System.out.println("Volume = " + volume());
-
-            System.out.println();
-        }
+    public double getSisiAlas() {
+        return sisiAlas;
     }
 
+    public void setSisiAlas(double sisiAlas) {
+        this.sisiAlas = sisiAlas;
+    }
 
+    public double getTinggiLimas() {
+        return tinggiLimas;
+    }
+
+    public void setTinggiLimas(double tinggiLimas) {
+        this.tinggiLimas = tinggiLimas;
+    }
+
+    public double getTinggiSisi() {
+        return tinggiSisi;
+    }
+
+    public void setTinggiSisi(double tinggiSisi) {
+        this.tinggiSisi = tinggiSisi;
+    }
+    
+    //Method Menghitung
+    public double volume (){
+        return (1.0/3.0) * (sisiAlas*sisiAlas) * tinggiLimas;
+    }
+    
+    public double luasPermukaan (){
+        double luasAlas = sisiAlas * sisiAlas;
+        double luasSisiTegak = 4 * (0.5 * sisiAlas * tinggiSisi);
+        return luasAlas + luasSisiTegak;
+        
+    }
+     //Method Menampilkan
+     public void tampil() {
+        double v = Math.round(volume() * 100.0) / 100.0;
+        double l = Math.round(luasPermukaan() * 100.0) / 100.0;
+
+         System.out.println("------Limas Segi Empat------");
+        System.out.println("Rumus Volume (V) = 1/3 * s * s * t");
+        System.out.println("Rumus Luas Permukaan (L) = (s*s) + 4*(1/2 * s * tinggiSisi)");
+        System.out.println("Diketahui : s = " + (int) sisiAlas
+                         + ", t = " + (int) tinggiLimas
+                         + ", tinggiSisi = " + (int) tinggiSisi);
+        System.out.println("Ditanya : V, L?");
+        System.out.println("V = " + v);
+        System.out.println("L = " + l);
+        System.out.println();
+
+    }
+    
+}
