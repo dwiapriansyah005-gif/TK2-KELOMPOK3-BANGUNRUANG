@@ -8,6 +8,7 @@ package tk2.kelompok3;
  *
  * @author macbookairm12020
  */
+//Limas Dwi Apriansyah
 public class DwiLimassegiempat {
     
     //Atribut
