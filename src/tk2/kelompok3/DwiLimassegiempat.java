@@ -64,7 +64,7 @@ public class DwiLimassegiempat {
         double v = Math.round(volume() * 100.0) / 100.0;
         double l = Math.round(luasPermukaan() * 100.0) / 100.0;
 
-         System.out.println("------Limas Segi Empat------");
+         System.out.println("-------Limas Segi Empat-------");
         System.out.println("Rumus Volume (V) = 1/3 * s * s * t");
         System.out.println("Rumus Luas Permukaan (L) = (s*s) + 4*(1/2 * s * tinggiSisi)");
         System.out.println("Diketahui : s = " + (int) sisiAlas
