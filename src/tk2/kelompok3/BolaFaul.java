@@ -22,6 +22,7 @@ public class BolaFaul {
         return 4 * Math.PI * Math.pow(jariJari, 2);
     }
     public void tampil(){
+        System.out.println("------- BOLA -------");
         System.out.println("Rumus Volume (V) = 4/3 * phi * r * r * r");
         System.out.println("Rumus Luas Permukaan (L) = 4 * phi * r * r");
         System.out.println("Diketahui : r = " + (int) jariJari
