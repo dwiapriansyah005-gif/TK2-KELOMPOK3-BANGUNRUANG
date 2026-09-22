@@ -31,9 +31,10 @@ public class KerucutFarid {
 
     // Method tampil
     public void tampil() {
+        System.out.println("------- KERUCUT -------");
         System.out.println("Rumus Volume (V) = 1/3 * phi * r * r * t");
         System.out.println("Rumus Luas Permukaan (L) = phi * r * (r + s)");
-        System.out.println("Diketahui : r = " + (int) jariJari + "\nt = " + (int) tinggi + "\ns = " + (int) garisPelukis + "\nphi = " + String.format("%.2f", Math.PI));
+        System.out.println("Diketahui : r = " + (int) jariJari + ", t = " + (int) tinggi + ", s = " + (int) garisPelukis + ", phi = " + String.format("%.2f", Math.PI));
         System.out.println("Ditanya : V, L?");
         System.out.printf("V = %.2f%n", volume());
         System.out.printf("L = %.2f%n", luasPermukaan());
