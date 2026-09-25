@@ -22,9 +22,9 @@ public class KubusBetrin {
     // Method tampil
     public void tampil() {
         System.out.println("------- KUBUS -------");
-        System.out.println("Rumus Volume (V) = S * S * S");
+        System.out.println("Rumus Volume (V) = s * s * s");
         System.out.println("Rumus Luas Permukaan (L) = 6 * sisi * sisi");
-        System.out.println("Diketahui : S = " + (int) sisi);
+        System.out.println("Diketahui : s = " + (int) sisi);
         System.out.println("Ditanya : V, L?");
         System.out.println("V = " + volume());
         System.out.println("L = " + luasPermukaan());
