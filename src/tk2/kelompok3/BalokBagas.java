@@ -45,7 +45,7 @@ public class BalokBagas {
         System.out.println("-------BALOK-------");
         System.out.println("Rumus Volume (V) = p * l * t");
         System.out.println("Rumus Luas Permukaan (L) = 2 * (p*l + p*t + 1*t)");
-        System.out.println("Diketahui : p = " + (int)panjang + "l = " + (int)lebar + "t = " + (int)tinggi );
+        System.out.println("Diketahui : p = " + (int)panjang + ", l = " + (int)lebar + ", t = " + (int)tinggi );
         System.out.println("Ditanya : V, L?");
         System.out.println("V = " + volume());
         System.out.println("L = " + LuasPermukaaan());
