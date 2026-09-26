@@ -6,8 +6,8 @@ public class MainBangunRuang {
         KubusBetrin kubus = new KubusBetrin(14);
         kubus.tampil();
         // 2.Tabung
-        TabungNatasza tabung = new TabungNatasza(7, 10);
-        tabung.tampil();
+        TabungNatasza tabung = new TabungNatasza();
+//        tabung.tampil();
         //3.Balok
         BalokBagas balok = new BalokBagas(8,4,3);
         balok.tampil();
