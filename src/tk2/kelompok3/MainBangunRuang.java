@@ -3,8 +3,9 @@ public class MainBangunRuang {
     public static void main(String[] args) {
         // TODO code application logic here
         // 1. KUBUS 
-        KubusBetrin kubus = new KubusBetrin(14);
-        kubus.tampil();
+        KubusBetrin kubus = new KubusBetrin();
+        kubus.setSisi(14);
+       
         // 2.Tabung
         TabungNatasza tabung = new TabungNatasza(7, 10);
         tabung.tampil();
