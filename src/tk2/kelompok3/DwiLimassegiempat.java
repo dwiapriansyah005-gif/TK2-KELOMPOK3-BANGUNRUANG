@@ -19,6 +19,7 @@ public class DwiLimassegiempat {
     private double luasPermukaan;
 
     //Constructor
+    //jframe
     public DwiLimassegiempat() {
 
     }
