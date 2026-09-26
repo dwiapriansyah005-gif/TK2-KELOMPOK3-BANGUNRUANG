@@ -9,8 +9,6 @@ public class MainBangunRuang {
         TabungNatasza tabung = new TabungNatasza(7, 10);
         tabung.tampil();
         //3.Balok
-        BalokBagas balok = new BalokBagas(8,4,3);
-        balok.tampil();
         //4.Bola
         BolaFaul bola = new BolaFaul(7);
         bola.tampil();
