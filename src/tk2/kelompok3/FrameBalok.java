@@ -175,17 +175,17 @@ public class FrameBalok extends javax.swing.JFrame {
 
     private void bSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSimpanActionPerformed
         // TODO add your handling code here:
-        BalokBagas bb = new BalokBagas();
+        BalokBagas balok = new BalokBagas();
         
-        bb.setPanjang(Double.parseDouble(tPanjang.getText()));
-        bb.setLebar(Double.parseDouble(tLebar.getText()));
-        bb.setTinggi(Double.parseDouble(tTinggi.getText()));
+        balok.setPanjang(Double.parseDouble(tPanjang.getText()));
+        balok.setLebar(Double.parseDouble(tLebar.getText()));
+        balok.setTinggi(Double.parseDouble(tTinggi.getText()));
         
-        bb.volume();
-        bb.LuasPermukaaan();
+        balok.volume();
+        balok.LuasPermukaaan();
         
-        tVolume.setText(String.valueOf(bb.getVolume()));
-        tLuasPermukaan.setText(String.valueOf(bb.getLuasPermukaan()));
+        tVolume.setText(String.valueOf(balok.getVolume()));
+        tLuasPermukaan.setText(String.valueOf(balok.getLuasPermukaan()));
         
         
         
